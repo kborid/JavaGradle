@@ -1,1 +1,1 @@
-include ':JavaGradle'
+rootProject.name = 'JavaGradle'
