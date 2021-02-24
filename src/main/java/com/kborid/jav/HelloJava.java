@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class HelloJava {
+
     public static void main(String[] args) {
         float a = 1.0f - 0.9f;
         float b = 0.9f - 0.8f;
@@ -40,5 +41,29 @@ public class HelloJava {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 全部可以调用
+     */
+    public void funcPublic() {
+    }
+
+    /**
+     * 本类、内部类可以调用、同包类、同包/不同包子类
+     */
+    protected void funcProtected() {
+    }
+
+    /**
+     * 本类、内部类可以调用、同包类、同包子类
+     */
+    void funcDefault() {
+    }
+
+    /**
+     * 本类、内部类可以调用
+     */
+    private void funcPrivate() {
     }
 }
